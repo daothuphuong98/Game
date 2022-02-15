@@ -4,8 +4,8 @@ import random
 from game_object import Dirt, Coin, Heart
 from enemies import Snake, Bird
 
-bg = pygame.image.load('Webp.net-resizeimage (1).png')
-stage_list = ['map4.json', 'map3.json', 'map2.json']
+bg = pygame.image.load('images/Webp.net-resizeimage (1).png')
+stage_list = ['map/map4.json', 'map/map3.json', 'map/map2.json']
 
 
 def chunks(lst, n):
@@ -69,6 +69,6 @@ class Stage:
         return current_stage
 
 
-stage1 = Stage('map.json', cont_draw=False)
+stage1 = Stage('map/map.json', cont_draw=False)
 stage2 = Stage(random.choice(stage_list))
 current_stage = [stage1, stage2]

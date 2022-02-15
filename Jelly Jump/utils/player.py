@@ -1,17 +1,20 @@
 import pygame
 from enemies import Snake, Bird
 
-damage_sound = pygame.mixer.Sound('damage.ogg')
+damage_sound = pygame.mixer.Sound('sound/damage.ogg')
 
 walkLeft = [pygame.transform.scale(x, (40, 50)) for x in
-            [pygame.image.load('tile004.png'), pygame.image.load('tile005.png'), pygame.image.load('tile006.png'),
-             pygame.image.load('tile007.png')]]
+            [pygame.image.load('images/jelly/tile004.png'), pygame.image.load('images/jelly/tile005.png'), pygame.image.load(
+                'images/jelly/tile006.png'),
+             pygame.image.load('images/jelly/tile007.png')]]
 walkRight = [pygame.transform.scale(x, (40, 50)) for x in
-             [pygame.image.load('tile008.png'), pygame.image.load('tile009.png'), pygame.image.load('tile010.png'),
-              pygame.image.load('tile011.png')]]
+             [pygame.image.load('images/jelly/tile008.png'), pygame.image.load('images/jelly/tile009.png'), pygame.image.load(
+                 'images/jelly/tile010.png'),
+              pygame.image.load('images/jelly/tile011.png')]]
 char = [pygame.transform.scale(x, (40, 50)) for x in
-        [pygame.image.load('tile000.png'), pygame.image.load('tile001.png'), pygame.image.load('tile002.png'),
-         pygame.image.load('tile003.png')]]
+        [pygame.image.load('images/jelly/tile000.png'), pygame.image.load('images/jelly/tile001.png'), pygame.image.load(
+            'images/jelly/tile002.png'),
+         pygame.image.load('images/jelly/tile003.png')]]
 
 DEFAULT_JUMPCOUNT = 9
 GRAVITY = 0.25

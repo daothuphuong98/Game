@@ -11,10 +11,10 @@ from moviepy.editor import VideoFileClip
 class Game:
     def __init__(self):
         self.small_font = pygame.font.Font('Jura-Light.ttf', 28)
-        self.icon = pygame.image.load('icon.png')
-        self.heart = pygame.image.load('heart.png')
-        self.bg = pygame.image.load('Webp.net-resizeimage (1).png')
-        self.game_over = pygame.mixer.Sound('game_over.wav')
+        self.icon = pygame.image.load('images/icon.png')
+        self.heart = pygame.image.load('images/heart.png')
+        self.bg = pygame.image.load('images/Webp.net-resizeimage (1).png')
+        self.game_over = pygame.mixer.Sound('sound/game_over.wav')
         self.win = pygame.display.set_mode((416, 608))
         pygame.display.set_caption('Jelly Jump')
         pygame.display.set_icon(self.icon)
@@ -32,10 +32,10 @@ class Game:
         self.running = True
         self.jelly = Player(160, 475)
         self.jelly.score = 0
-        stage.current_stage = [Stage('map.json', cont_draw=False), Stage(random.choice(stage.stage_list))]
+        stage.current_stage = [Stage('map/map.json', cont_draw=False), Stage(random.choice(stage.stage_list))]
 
     def start(self):
-        clip = VideoFileClip('Press any key to start.mp4')
+        clip = VideoFileClip('video/Press any key to start.mp4')
         clip.preview()
         self.wait_for_key()
 
@@ -86,7 +86,7 @@ class Game:
         if self.quit:
             return
         self.game_over.play()
-        clip2 = VideoFileClip('Press any key to restart.mp4')
+        clip2 = VideoFileClip('video/Press any key to restart.mp4')
         clip2.preview()
         jelly_score = self.small_font.render(str(self.jelly.score), False, (0, 0, 0))
         if self.jelly.score > self.high_score:

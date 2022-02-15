@@ -1,13 +1,17 @@
 import pygame
 
-snakeRight = [pygame.image.load('snake0.png'), pygame.image.load('snake1.png'), pygame.image.load('snake2.png'),
-              pygame.image.load('snake3.png')]
-snakeLeft = [pygame.image.load('snake4.png'), pygame.image.load('snake5.png'), pygame.image.load('snake6.png'),
-             pygame.image.load('snake7.png')]
-birdRight = [pygame.image.load('bird0.png'), pygame.image.load('bird1.png'), pygame.image.load('bird2.png'),
-             pygame.image.load('bird3.png')]
-birdLeft = [pygame.image.load('bird4.png'), pygame.image.load('bird5.png'), pygame.image.load('bird6.png'),
-            pygame.image.load('bird7.png')]
+snakeRight = [pygame.image.load('images/snake/snake0.png'), pygame.image.load('images/snake/snake1.png'), pygame.image.load(
+    'images/snake/snake2.png'),
+              pygame.image.load('images/snake/snake3.png')]
+snakeLeft = [pygame.image.load('images/snake/snake4.png'), pygame.image.load('images/snake/snake5.png'), pygame.image.load(
+    'images/snake/snake6.png'),
+             pygame.image.load('images/snake/snake7.png')]
+birdRight = [pygame.image.load('images/bird/bird0.png'), pygame.image.load('images/bird/bird1.png'), pygame.image.load(
+    'images/bird/bird2.png'),
+             pygame.image.load('images/bird/bird3.png')]
+birdLeft = [pygame.image.load('images/bird/bird4.png'), pygame.image.load('images/bird/bird5.png'), pygame.image.load(
+    'images/bird/bird6.png'),
+            pygame.image.load('images/bird/bird7.png')]
 
 
 class Snake(pygame.sprite.Sprite):

@@ -2,7 +2,7 @@ import pygame
 
 
 class Dirt(pygame.sprite.Sprite):
-    image = pygame.image.load('Tile_02.png')
+    image = pygame.image.load('images/jelly/Tile_02.png')
 
     def __init__(self, x_pos, y_pos):
         super().__init__()
@@ -15,8 +15,8 @@ class Dirt(pygame.sprite.Sprite):
 
 
 class Coin(pygame.sprite.Sprite):
-    image = pygame.image.load('coin.png')
-    sound = pygame.mixer.Sound('coin.wav')
+    image = pygame.image.load('images/coin.png')
+    sound = pygame.mixer.Sound('sound/coin.wav')
 
     def __init__(self, x_pos, y_pos):
         super().__init__()
@@ -31,8 +31,8 @@ class Coin(pygame.sprite.Sprite):
 
 
 class Heart(pygame.sprite.Sprite):
-    image = pygame.image.load('heart.png')
-    sound = pygame.mixer.Sound('heart.wav')
+    image = pygame.image.load('images/heart.png')
+    sound = pygame.mixer.Sound('sound/heart.wav')
 
     def __init__(self, x_pos, y_pos):
         super().__init__()
