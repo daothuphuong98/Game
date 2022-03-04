@@ -10,6 +10,9 @@ Keyboard `Arrow Keys` to move left and right.
 Grab coins to gain scores, grab hearts to gains lives.
 After the game ends, press any button to continue.
 
+## _**2. Tic Tac Toe**_
+Tic Tac Toe is light and simple puzzle game also known as Noughts and Crosses or Xs and Os. This is a 2 player game in a three by three framework. The player who aligns their three imprints in a flat, vertical, or slanting line is the victor.
+
 ### How to install and run on Linux: 
 
 1. Download the folder/copy it to your local device. 
@@ -40,4 +43,4 @@ In this game I have used `Python 3` and `PyGame`.
 
 Sprites and background made by <a href="https://craftpix.net/" title="Craftpix">Craftpix</a>
 
-For the game development i have used PyCharm by JetBrains https://www.jetbrains.com/pycharm/download/
+For the game development I have used PyCharm by JetBrains https://www.jetbrains.com/pycharm/download/
