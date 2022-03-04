@@ -11,7 +11,7 @@ Grab coins to gain scores, grab hearts to gains lives.
 After the game ends, press any button to continue.
 
 <p align="center">
-![jelly-jump-play](https://github.com/daothuphuong98/Game/blob/master/gameplay.gif)
+	<img src="https://github.com/daothuphuong98/Game/blob/master/gameplay.gif" alt="animated" />
 </p>
 
 ## _**2. Tic Tac Toe**_
